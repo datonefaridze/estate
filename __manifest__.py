@@ -3,15 +3,17 @@
 
 {
     'name': 'estate',
-    'version': '1.2',
+    'version': '1.0',
     'depends': [
-        'base_setup',
+        'base',
     ],
     'data': [
         'security/ir.model.access.csv',
+        'views/estate_property_views.xml',
+        'views/estate_menus.xml',
     ],
     'css': ['static/src/css/crm.css'],
     'installable': True,
     'application': True,
-    'auto_install': False
+    'auto_install': False,
 }
