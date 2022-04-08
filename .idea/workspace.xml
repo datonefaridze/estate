@@ -2,14 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a906c51c-a6c3-40f9-be5a-7961574631cc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/estate_menus.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/estate_property_views.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/property_offer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/property_tag.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/property_type.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/res_users.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/estate_property_offer_views.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/property_type_views.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/__manifest__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/estate.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/estate.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/security/ir.model.access.csv" beforeDir="false" afterPath="$PROJECT_DIR$/security/ir.model.access.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/estate_menus.xml" beforeDir="false" afterPath="$PROJECT_DIR$/views/estate_menus.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/estate_property_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/views/estate_property_views.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +30,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -81,7 +94,11 @@
       <workItem from="1649155032294" duration="5463000" />
       <workItem from="1649232661065" duration="14130000" />
       <workItem from="1649251786841" duration="4165000" />
-      <workItem from="1649311172166" duration="1097000" />
+      <workItem from="1649311172166" duration="13805000" />
+      <workItem from="1649335838934" duration="5485000" />
+      <workItem from="1649356543571" duration="2907000" />
+      <workItem from="1649401648738" duration="3844000" />
+      <workItem from="1649413470614" duration="6642000" />
     </task>
     <servers />
   </component>
