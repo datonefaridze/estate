@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a906c51c-a6c3-40f9-be5a-7961574631cc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/models/property_offer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/property_tag.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/property_type.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/res_users.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/estate_property_offer_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/property_type_views.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/__manifest__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/estate.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/estate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/ir.model.access.csv" beforeDir="false" afterPath="$PROJECT_DIR$/security/ir.model.access.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/estate_menus.xml" beforeDir="false" afterPath="$PROJECT_DIR$/views/estate_menus.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/estate_property_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/views/estate_property_views.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/property_offer.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/property_offer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/property_type.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/property_type.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +88,7 @@
       <workItem from="1649335838934" duration="5485000" />
       <workItem from="1649356543571" duration="2907000" />
       <workItem from="1649401648738" duration="3844000" />
-      <workItem from="1649413470614" duration="6642000" />
+      <workItem from="1649413470614" duration="7798000" />
     </task>
     <servers />
   </component>

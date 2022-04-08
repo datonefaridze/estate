@@ -48,7 +48,6 @@
                     <field name="state" widget="statusbar" statusbar_visible="n,r,a,s"/>
                 </header>
                 <sheet>
-
                    <group>
                         <div class="oe_title">
                             <div class="oe_edit_only">
@@ -102,10 +101,7 @@
                         <page string="Offers">
                             <field name="offer_ids"/>
                         </page>
-
                     </notebook>
-
-
                 </sheet>
             </form>
         </field>
@@ -125,7 +121,7 @@
     </record>
 
 
-    <record id="crm_lost_reason_view_tree" model="ir.ui.view">
+    <record id="estate_property_tree" model="ir.ui.view">
         <field name="name">estate.property.tree</field>
         <field name="model">estate.property</field>
         <field name="arch" type="xml">
@@ -135,7 +131,6 @@
             </tree>
         </field>
     </record>
-
 
 
     <record id="estate_property_view_kanban" model="ir.ui.view">

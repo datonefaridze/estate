@@ -51,48 +51,48 @@ class EstateModel(models.Model):
 
     @api.depends("living_area", "garden_area")
     def _compute_total_area(self):
-        for line in self:
-            line.total_area = line.living_area + line.garden_area
+        for record in self:
+            record.total_area = record.living_area + record.garden_area
 
     @api.depends("offer_ids.price", "garden_area")
     def _compute_best_price(self):
-        for line in self:
-            prices = line.offer_ids.mapped("price")
-            line.best_price = max(prices, default=0)
+        for record in self:
+            prices = record.offer_ids.mapped("price")
+            record.best_price = max(prices, default=0)
 
     @api.onchange("garden")
     def _onchange_garden(self):
-        for line in self:
-            if line.garden:
-                line.garden_area = 10
-                line.garden_orientation = "north"
+        for record in self:
+            if record.garden:
+                record.garden_area = 10
+                record.garden_orientation = "north"
             else:
-                line.garden_area = 0
-                line.garden_orientation = None
+                record.garden_area = 0
+                record.garden_orientation = None
 
     def action_sold(self):
         # print("PARENT ACTION SOLD")
-        for line in self:
-            if line.state == "s":
+        for record in self:
+            if record.state == "s":
                 raise UserError("This is sold property!!!")
-            if line.state == "c":
+            if record.state == "c":
                 raise UserError("You can't cancel this property")
-            line.state = "s"
+            record.state = "s"
         return True
 
     def action_cancel(self):
-        for line in self:
-            if line.state == "s":
+        for record in self:
+            if record.state == "s":
                 raise UserError("You can't sell sold property")
-            if line.state == "c":
+            if record.state == "c":
                 raise UserError("This Property has been cancelled")
-            line.state = "c"
+            record.state = "c"
         return True
 
     @api.ondelete(at_uninstall=False)
     def _unlink_if_new_or_canceled(self):
-        for line in self:
-            if line.state not in ["o", "c"]:
+        for record in self:
+            if record.state not in ["o", "c"]:
                 raise UserError("Only new and canceled properties can be deleted.")
 
 

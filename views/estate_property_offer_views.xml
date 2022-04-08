@@ -36,26 +36,4 @@
     </record>
 
 
-<!--    <record id="estate_property_offer_view_form" model="ir.ui.view">-->
-<!--        <field name="name">estate.property.offer.view.form</field>-->
-<!--        <field name="model">estate.property.offer</field>-->
-<!--        <field name="arch" type="xml">-->
-<!--            <form string="Property Offer">-->
-<!--                <sheet>-->
-<!--                    <group>-->
-<!--                        <field name="name"/>-->
-<!--                        <field name="price"/>-->
-<!--                        <field name="partner_id"/>-->
-<!--                        <field name="validity"/>-->
-<!--                        <field name="date_deadline"/>-->
-<!--                        <field name="status"/>-->
-<!--                        <button name="action_accept" string="Accept" type="object" icon="fa-check" attrs="{'invisible': [('status', '!=', False)]}"/>-->
-<!--                        <button name="action_refuse" string="Refuse" type="object" icon="fa-times" attrs="{'invisible': [('status', '!=', False)]}"/>-->
-
-<!--                    </group>-->
-<!--                </sheet>-->
-<!--            </form>-->
-<!--        </field>-->
-<!--    </record>-->
-
 </odoo>

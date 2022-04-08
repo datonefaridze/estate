@@ -7,24 +7,23 @@ from odoo.tools import float_compare
 class EstateOffer(models.Model):
     _name = "estate.property.offer"
     _description = "Test Model"
+    _order = "price desc"
+    _sql_constraints = [
+        ("check_price", "CHECK(price > 0)", "An offer price must be strictly positive")
+    ]
     name = fields.Char()
     price = fields.Float()
-    _order = "price desc"
-    status = fields.Selection([("a", "Accepted"), ("r", "Refused")])# [('a', "Accepted", 'r', "Refused")], copy=False)
-
+    status = fields.Selection([("a", "Accepted"),
+                               ("r", "Refused"),
+                               ])
     partner_id = fields.Many2one("res.partner", required=True)
     property_id = fields.Many2one("estate.property", required=True)
-
     validity = fields.Integer("Validity (days)", default=7)
     date_deadline = fields.Date(
         "Deadline",
         compute="_compute_deadline",
         readonly=False,
     )
-
-    _sql_constraints = [
-        ("check_price", "CHECK(price > 0)", "An offer price must be strictly positive")
-    ]
 
     @api.depends("validity")
     def _compute_deadline(self):
@@ -52,11 +51,9 @@ class EstateOffer(models.Model):
                 raise UserError(
                     f"You cannot accept an offer has already been {record.status}."
                 )
-
             record.status = "a"
             record.property_id.buyer_ids = record.partner_id
             record.property_id.selling_price = record.price
-
         return True
 
     def action_refuse(self):
@@ -65,9 +62,7 @@ class EstateOffer(models.Model):
                 raise UserError(
                     f"You cannot refuse an offer has already been {record.status}."
                 )
-
             record.status = "r"
-
         return True
 
     @api.constrains("price")
